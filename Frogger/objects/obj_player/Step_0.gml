@@ -1,27 +1,39 @@
 /// @description Insert description here
-if moving = true {
-if targetx > x
-{ x+=2;
+if (moving == true)
+{
+	if (targetx > x)
+	{
+		x += 4;
+	}
+	
+	if (targetx < x)
+	{
+		x -= 4;
+	}
+	
+	if (targety > y)
+	{
+		y += 4;	
+	}
+	
+	if (targety < y)
+	{
+		y -= 4;	
+	}
+	
+	if (targetx = x && targety = y)
+	{
+		moving = false;	
+	}
 }
-if targetx < x
-{ x-=2;
+
+if (place_meeting(x,y,obj_lilypad) && moving = false)
+{
+	var lilySpot = instance_nearest(x, y, obj_lilypad);
+	x = lilySpot.x;
 }
-if targety > y {
-y+=2	
-}
-if targety < y {
-y-=2	
-}
-if targetx = x and targety = y {
-moving = false;	
-}
-}
-if place_meeting(x,y,obj_lilypadleft) and moving = false {
-x-=1	
-}
-if place_meeting(x,y,obj_lilypadright) and moving = false {
-x+=1	
-}
-if !place_meeting(x,y,obj_lilypadright) and !place_meeting(x,y,obj_lilypadleft) and place_meeting(x,y,obj_watertile) and moving = false {
-Lose();
+
+if !place_meeting(x,y,obj_lilypad) && !place_meeting(x,y,obj_lilypad) && place_meeting(x,y,obj_water) && moving = false
+{
+	Lose();
 }

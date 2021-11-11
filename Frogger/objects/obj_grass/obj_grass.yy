@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_watertile",
-    "path": "sprites/spr_watertile/spr_watertile.yy",
+    "name": "spr_grass",
+    "path": "sprites/spr_grass/spr_grass.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,18 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "GameObjects",
+    "path": "folders/Objects/GameObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_watertile",
+  "name": "obj_grass",
   "tags": [],
   "resourceType": "GMObject",
 }

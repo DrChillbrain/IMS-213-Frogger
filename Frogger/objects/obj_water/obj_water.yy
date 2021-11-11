@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_lilypad",
-    "path": "sprites/spr_lilypad/spr_lilypad.yy",
+    "name": "spr_watertile",
+    "path": "sprites/spr_watertile/spr_watertile.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "GameObjects",
+    "path": "folders/Objects/GameObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_lilypadright",
+  "name": "obj_water",
   "tags": [],
   "resourceType": "GMObject",
 }
