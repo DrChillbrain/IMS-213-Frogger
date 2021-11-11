@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_road","path":"sprites/spr_road/spr_road.yy",},"order":4,},
+    {"id":{"name":"spr_truck","path":"sprites/spr_truck/spr_truck.yy",},"order":5,},
     {"id":{"name":"spr_lilypad","path":"sprites/spr_lilypad/spr_lilypad.yy",},"order":1,},
     {"id":{"name":"obj_lilypadSpawner","path":"objects/obj_lilypadSpawner/obj_lilypadSpawner.yy",},"order":0,},
     {"id":{"name":"obj_road","path":"objects/obj_road/obj_road.yy",},"order":1,},
@@ -12,8 +13,10 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":5,},
     {"id":{"name":"GameController","path":"objects/GameController/GameController.yy",},"order":4,},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"order":3,},
+    {"id":{"name":"obj_truckSpawner","path":"objects/obj_truckSpawner/obj_truckSpawner.yy",},"order":1,},
     {"id":{"name":"spr_watertile","path":"sprites/spr_watertile/spr_watertile.yy",},"order":2,},
     {"id":{"name":"obj_grass","path":"objects/obj_grass/obj_grass.yy",},"order":0,},
+    {"id":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},"order":4,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -58,7 +61,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.6.595",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "Frogger",

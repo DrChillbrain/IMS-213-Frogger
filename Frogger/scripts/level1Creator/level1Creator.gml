@@ -63,6 +63,10 @@ function level1Creator()
 	spawner.groupSize = 2;
 	spawner.groupDistance = 120;
 	
+	var spawner = instance_create_layer(0, 400 + 16, "objects", obj_truckSpawner);
+	spawner.startPos = 608;
+	spawner.truckSpeed = -1;
+	
 	level1Array = [grasspatch1, road, grasspatch2, water, landing]
 	return(level1Array);
 }

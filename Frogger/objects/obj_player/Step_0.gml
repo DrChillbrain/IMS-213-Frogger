@@ -37,3 +37,7 @@ if !place_meeting(x,y,obj_lilypad) && !place_meeting(x,y,obj_lilypad) && place_m
 {
 	Lose();
 }
+if place_meeting(x,y,obj_truck)
+{
+	Lose();
+}
