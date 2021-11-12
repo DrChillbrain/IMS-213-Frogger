@@ -14,6 +14,6 @@ if (groupCount == groupSize)
 
 else
 {
-	alarm_set(0, 35);
+	alarm_set(0, groupSpacing);
 }
 

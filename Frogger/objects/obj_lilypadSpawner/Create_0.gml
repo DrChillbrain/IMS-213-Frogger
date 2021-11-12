@@ -6,5 +6,6 @@ lilySpeed = 0;
 groupSize = 0;
 groupCount = 0;
 groupDistance = 0;
+groupSpacing = 0;
 
 alarm_set(0, 1);
