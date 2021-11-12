@@ -1,31 +1,19 @@
 /// @description Insert description here
 if (moving == true)
 {
-	if (targetx > x)
+	if (moveCounter < 8)
 	{
-		x += moveSpeed;
+		x += xmoveSpeed;
+		y += ymoveSpeed;
+		moveCounter += 1;
 	}
 	
-	if (targetx < x)
+	else
 	{
-		x -= moveSpeed;
-	}
-	
-	if (targety > y)
-	{
-		y += moveSpeed;	
-	}
-	
-	if (targety < y)
-	{
-		y -= moveSpeed;	
-	}
-	
-	if (abs(targetx - x) < 4 && abs(targety - y) < 4)
-	{
-		x = targetx;
-		y = targety;
-		moving = false;	
+		moving = false;
+		xmoveSpeed = 0;
+		ymoveSpeed = 0;
+		moveCounter = 0;
 	}
 }
 
