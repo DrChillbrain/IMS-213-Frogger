@@ -3,5 +3,5 @@
 
 if (frogLives == -1)
 {
-	//Do some game over
+	GameOver();
 }
