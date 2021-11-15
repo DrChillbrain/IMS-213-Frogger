@@ -71,7 +71,20 @@ if (!place_meeting(x, y, obj_lilypad) && !place_meeting(x, y, obj_log) && place_
 	Lose();
 }
 
-if (place_meeting(x, y, obj_truck) || place_meeting(x, y, obj_car))
+if (place_meeting(x, y, obj_truck))
 {
-	Lose();
+	var truckSpot = instance_nearest(x, y, obj_truck);
+	if (abs(x - truckSpot.x) < 28 && abs(y - truckSpot.y) < 20)
+	{
+		Lose();
+	}
+}
+
+if (place_meeting(x, y, obj_car))
+{
+	var carSpot = instance_nearest(x, y, obj_car);
+	if (abs(x - carSpot.x) < 20 && abs(y - carSpot.y) < 20)
+	{
+		Lose();
+	}
 }

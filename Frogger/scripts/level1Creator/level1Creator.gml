@@ -69,7 +69,7 @@ function level1Creator()
 	}
 	
 	//Road Row 1 (Slow Car Left)
-	carSpawners[0] = instance_create_layer(0, 480 + 16, "objects", obj_truckSpawner);
+	carSpawners[0] = instance_create_layer(0, 480 + 16, "cars", obj_truckSpawner);
 	carSpawners[0].startPos = -50;
 	carSpawners[0].truckSpeed = 2;
 	carSpawners[0].groupSize = 3;
@@ -78,7 +78,7 @@ function level1Creator()
 	carSpawners[0].carType = 2;
 	
 	//Road Row 2 (Medium Car Right)
-	carSpawners[1] = instance_create_layer(0, 448 + 16, "objects", obj_truckSpawner);
+	carSpawners[1] = instance_create_layer(0, 448 + 16, "cars", obj_truckSpawner);
 	carSpawners[1].startPos = -50;
 	carSpawners[1].truckSpeed = 3;
 	carSpawners[1].groupSize = 1;
@@ -87,7 +87,7 @@ function level1Creator()
 	carSpawners[1].carType = 2;
 	
 	//Road Row 3 (Slow Truck Left)
-	carSpawners[2] = instance_create_layer(0, 416 + 16, "objects", obj_truckSpawner);
+	carSpawners[2] = instance_create_layer(0, 416 + 16, "cars", obj_truckSpawner);
 	carSpawners[2].startPos = 626;
 	carSpawners[2].truckSpeed = -1;
 	carSpawners[2].groupSize = 2;
@@ -96,7 +96,7 @@ function level1Creator()
 	carSpawners[2].carType = 1;
 	
 	//Road Row 4 (Medium Car Left)
-	carSpawners[3] = instance_create_layer(0, 384 + 16, "objects", obj_truckSpawner);
+	carSpawners[3] = instance_create_layer(0, 384 + 16, "cars", obj_truckSpawner);
 	carSpawners[3].startPos = 626;
 	carSpawners[3].truckSpeed = -2;
 	carSpawners[3].groupSize = 3;
@@ -105,7 +105,7 @@ function level1Creator()
 	carSpawners[3].carType = 2;
 	
 	//Road Row 5 (Fast Car Left)
-	carSpawners[4] = instance_create_layer(0, 352 + 16, "objects", obj_truckSpawner);
+	carSpawners[4] = instance_create_layer(0, 352 + 16, "cars", obj_truckSpawner);
 	carSpawners[4].startPos = 626;
 	carSpawners[4].truckSpeed = -5;
 	carSpawners[4].groupSize = 2;
@@ -114,7 +114,7 @@ function level1Creator()
 	carSpawners[4].carType = 2;
 
 	//Road Row 6 (Medium Truck Right)
-	carSpawners[5] = instance_create_layer(0, 320 + 16, "objects", obj_truckSpawner);
+	carSpawners[5] = instance_create_layer(0, 320 + 16, "cars", obj_truckSpawner);
 	carSpawners[5].startPos = -50;
 	carSpawners[5].truckSpeed = 2;
 	carSpawners[5].groupSize = 2;

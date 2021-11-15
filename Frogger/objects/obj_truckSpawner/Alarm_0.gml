@@ -3,7 +3,7 @@
 
 if (carType == 1) //Truck Object
 {
-	var truck = instance_create_layer(startPos, y, "objects", obj_truck)
+	var truck = instance_create_layer(startPos, y, "cars", obj_truck)
 	truck.truckSpeed = truckSpeed;
 	
 	if (truckSpeed > 0)
@@ -14,7 +14,7 @@ if (carType == 1) //Truck Object
 
 else if (carType == 2) //Car Object
 {
-	var car = instance_create_layer(startPos, y, "objects", obj_car);
+	var car = instance_create_layer(startPos, y, "cars", obj_car);
 	car.carSpeed = truckSpeed;
 	
 	if (truckSpeed > 0)
