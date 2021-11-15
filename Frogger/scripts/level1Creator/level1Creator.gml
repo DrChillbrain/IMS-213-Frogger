@@ -8,7 +8,10 @@ function level1Creator()
 	grasspatch2 = [];
 	water = [];
 	landing = [];
+	carSpawners = [];
+	waterSpawners = [];
 	counter = 0;
+	landCounter = 1;
 	
 	for (var i = 0; i < 18; i++)
 	{
@@ -46,115 +49,128 @@ function level1Creator()
 		
 		for (var j = 1; j < 2; j++)
 		{
-			landing[counter] = instance_create_layer((i * 32) + 16, (96 - (32 * j)) + 16, "floor", obj_grass);
+			if (landCounter == 2)
+			{
+				landCounter = 0;
+				landing[counter] = instance_create_layer((i * 32) + 16, (96 - (32 * j)) + 16, "floor", obj_landing);
+				landing[counter].landingID = i;
+			}
+			
+			else
+			{
+				landCounter += 1;
+				landing[counter] = instance_create_layer((i * 32) + 16, (96 - (32 * j)) + 16, "floor", obj_thorns);
+			}
+			
 			counter += 1;
 		}
+		
+		
 	}
 	
 	//Road Row 1 (Slow Car Left)
-	var spawner = instance_create_layer(0, 480 + 16, "objects", obj_truckSpawner);
-	spawner.startPos = -50;
-	spawner.truckSpeed = 2;
-	spawner.groupSize = 3;
-	spawner.groupDistance = 100;
-	spawner.groupSpacing = 15;
-	spawner.carType = 2;
+	carSpawners[0] = instance_create_layer(0, 480 + 16, "objects", obj_truckSpawner);
+	carSpawners[0].startPos = -50;
+	carSpawners[0].truckSpeed = 2;
+	carSpawners[0].groupSize = 3;
+	carSpawners[0].groupDistance = 100;
+	carSpawners[0].groupSpacing = 15;
+	carSpawners[0].carType = 2;
 	
 	//Road Row 2 (Medium Car Right)
-	var spawner = instance_create_layer(0, 448 + 16, "objects", obj_truckSpawner);
-	spawner.startPos = -50;
-	spawner.truckSpeed = 3;
-	spawner.groupSize = 1;
-	spawner.groupDistance = 100;
-	spawner.groupSpacing = 0;
-	spawner.carType = 2;
+	carSpawners[1] = instance_create_layer(0, 448 + 16, "objects", obj_truckSpawner);
+	carSpawners[1].startPos = -50;
+	carSpawners[1].truckSpeed = 3;
+	carSpawners[1].groupSize = 1;
+	carSpawners[1].groupDistance = 100;
+	carSpawners[1].groupSpacing = 0;
+	carSpawners[1].carType = 2;
 	
 	//Road Row 3 (Slow Truck Left)
-	var spawner = instance_create_layer(0, 416 + 16, "objects", obj_truckSpawner);
-	spawner.startPos = 626;
-	spawner.truckSpeed = -1;
-	spawner.groupSize = 2;
-	spawner.groupDistance = 280;
-	spawner.groupSpacing = 60;
-	spawner.carType = 1;
+	carSpawners[2] = instance_create_layer(0, 416 + 16, "objects", obj_truckSpawner);
+	carSpawners[2].startPos = 626;
+	carSpawners[2].truckSpeed = -1;
+	carSpawners[2].groupSize = 2;
+	carSpawners[2].groupDistance = 280;
+	carSpawners[2].groupSpacing = 60;
+	carSpawners[2].carType = 1;
 	
 	//Road Row 4 (Medium Car Left)
-	var spawner = instance_create_layer(0, 384 + 16, "objects", obj_truckSpawner);
-	spawner.startPos = 626;
-	spawner.truckSpeed = -2;
-	spawner.groupSize = 3;
-	spawner.groupDistance = 100;
-	spawner.groupSpacing = 15;
-	spawner.carType = 2;
+	carSpawners[3] = instance_create_layer(0, 384 + 16, "objects", obj_truckSpawner);
+	carSpawners[3].startPos = 626;
+	carSpawners[3].truckSpeed = -2;
+	carSpawners[3].groupSize = 3;
+	carSpawners[3].groupDistance = 100;
+	carSpawners[3].groupSpacing = 15;
+	carSpawners[3].carType = 2;
 	
 	//Road Row 5 (Fast Car Left)
-	var spawner = instance_create_layer(0, 352 + 16, "objects", obj_truckSpawner);
-	spawner.startPos = 626;
-	spawner.truckSpeed = -5;
-	spawner.groupSize = 2;
-	spawner.groupDistance = 150;
-	spawner.groupSpacing = 80;
-	spawner.carType = 2;
+	carSpawners[4] = instance_create_layer(0, 352 + 16, "objects", obj_truckSpawner);
+	carSpawners[4].startPos = 626;
+	carSpawners[4].truckSpeed = -5;
+	carSpawners[4].groupSize = 2;
+	carSpawners[4].groupDistance = 150;
+	carSpawners[4].groupSpacing = 80;
+	carSpawners[4].carType = 2;
 
 	//Road Row 6 (Medium Truck Right)
-	var spawner = instance_create_layer(0, 320 + 16, "objects", obj_truckSpawner);
-	spawner.startPos = -50;
-	spawner.truckSpeed = 2;
-	spawner.groupSize = 2;
-	spawner.groupDistance = 140;
-	spawner.groupSpacing = 30;
-	spawner.carType = 1;
+	carSpawners[5] = instance_create_layer(0, 320 + 16, "objects", obj_truckSpawner);
+	carSpawners[5].startPos = -50;
+	carSpawners[5].truckSpeed = 2;
+	carSpawners[5].groupSize = 2;
+	carSpawners[5].groupDistance = 140;
+	carSpawners[5].groupSpacing = 30;
+	carSpawners[5].carType = 1;
 
 
 	//Water Row 1 (Slow Lilypad Right)
-	var spawner = instance_create_layer(0, 256 + 16, "objects", obj_lilypadSpawner);
-	spawner.startPos = -50;
-	spawner.lilySpeed = 1;
-	spawner.groupSize = 3;
-	spawner.groupDistance = 120;
-	spawner.groupSpacing = 35;
+	waterSpawners[0] = instance_create_layer(0, 256 + 16, "objects", obj_lilypadSpawner);
+	waterSpawners[0].startPos = -50;
+	waterSpawners[0].lilySpeed = 1;
+	waterSpawners[0].groupSize = 3;
+	waterSpawners[0].groupDistance = 120;
+	waterSpawners[0].groupSpacing = 35;
 	
 	//Water Row 2 (Medium Lilypad Left)
-	var spawner = instance_create_layer(0, 224 + 16, "objects", obj_lilypadSpawner);
-	spawner.startPos = 626;
-	spawner.lilySpeed = -2;
-	spawner.groupSize = 2;
-	spawner.groupDistance = 100;
-	spawner.groupSpacing = (35 / 2);
+	waterSpawners[1] = instance_create_layer(0, 224 + 16, "objects", obj_lilypadSpawner);
+	waterSpawners[1].startPos = 626;
+	waterSpawners[1].lilySpeed = -2;
+	waterSpawners[1].groupSize = 2;
+	waterSpawners[1].groupDistance = 100;
+	waterSpawners[1].groupSpacing = (35 / 2);
 	
 	//Water Row 3 (Slow Log Left)
-	var spawner = instance_create_layer(0, 192 + 16, "objects", obj_logSpawner);
-	spawner.startPos = 626;
-	spawner.logSpeed = -1;
-	spawner.log1Size = 4;
-	spawner.log2Size = 3;
-	spawner.log3Size = 4;
+	waterSpawners[2] = instance_create_layer(0, 192 + 16, "objects", obj_logSpawner);
+	waterSpawners[2].startPos = 626;
+	waterSpawners[2].logSpeed = -1;
+	waterSpawners[2].log1Size = 4;
+	waterSpawners[2].log2Size = 3;
+	waterSpawners[2].log3Size = 4;
 	
 	//Water Row 4 (Fast Lilypad Right)
-	var spawner = instance_create_layer(0, 160 + 16, "objects", obj_lilypadSpawner);
-	spawner.startPos = -50;
-	spawner.lilySpeed = 3;
-	spawner.groupSize = 4;
-	spawner.groupDistance = 50;
-	spawner.groupSpacing = (35 / 3);
+	waterSpawners[3] = instance_create_layer(0, 160 + 16, "objects", obj_lilypadSpawner);
+	waterSpawners[3].startPos = -50;
+	waterSpawners[3].lilySpeed = 3;
+	waterSpawners[3].groupSize = 4;
+	waterSpawners[3].groupDistance = 50;
+	waterSpawners[3].groupSpacing = (35 / 3);
 	
 	//Water Row 5 (Medium Log Left)
-	var spawner = instance_create_layer(0, 128 + 16, "objects", obj_logSpawner);
-	spawner.startPos = 626;
-	spawner.logSpeed = -2;
-	spawner.log1Size = 6;
-	spawner.log2Size = 2;
-	spawner.log3Size = 4;
+	waterSpawners[4] = instance_create_layer(0, 128 + 16, "objects", obj_logSpawner);
+	waterSpawners[4].startPos = 626;
+	waterSpawners[4].logSpeed = -2;
+	waterSpawners[4].log1Size = 6;
+	waterSpawners[4].log2Size = 2;
+	waterSpawners[4].log3Size = 4;
 	
 	//Water Row 6 (Medium LilyPad Right)
-	var spawner = instance_create_layer(0, 96 + 16, "objects", obj_lilypadSpawner);
-	spawner.startPos = -50;
-	spawner.lilySpeed = 2;
-	spawner.groupSize = 3;
-	spawner.groupDistance = 70;
-	spawner.groupSpacing = (35 / 2);
+	waterSpawners[5] = instance_create_layer(0, 96 + 16, "objects", obj_lilypadSpawner);
+	waterSpawners[5].startPos = -50;
+	waterSpawners[5].lilySpeed = 2;
+	waterSpawners[5].groupSize = 3;
+	waterSpawners[5].groupDistance = 70;
+	waterSpawners[5].groupSpacing = (35 / 2);
 	
-	
-	level1Array = [grasspatch1, road, grasspatch2, water, landing]
+	level1Array = [grasspatch1, road, grasspatch2, water, landing, carSpawners, waterSpawners]
 	return(level1Array);
 }

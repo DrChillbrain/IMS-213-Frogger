@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Sequences.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Lose",
+  "name": "Reach",
   "tags": [],
   "resourceType": "GMScript",
 }
