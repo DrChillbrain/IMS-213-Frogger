@@ -8,3 +8,4 @@ moving = false;
 moveCounter = 0;
 xmoveSpeed = 0;
 ymoveSpeed = 0;
+image_index = 0;

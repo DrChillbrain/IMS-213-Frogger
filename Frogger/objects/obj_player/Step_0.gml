@@ -1,6 +1,7 @@
 /// @description Insert description here
 if (moving == true)
 {
+image_index = 1;
 	if (moveCounter < 8)
 	{
 		x += xmoveSpeed;
@@ -14,8 +15,10 @@ if (moving == true)
 		xmoveSpeed = 0;
 		ymoveSpeed = 0;
 		moveCounter = 0;
+		image_index = 0;
 	}
 }
+
 
 if (place_meeting(x, y, obj_lilypad) && moving == false)
 {

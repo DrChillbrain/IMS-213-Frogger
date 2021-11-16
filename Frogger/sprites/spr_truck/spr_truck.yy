@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 56,
-  "bbox_top": 2,
-  "bbox_bottom": 26,
+  "bbox_left": 6,
+  "bbox_right": 59,
+  "bbox_top": 6,
+  "bbox_bottom": 25,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"003e4ee6-1157-4d2a-902d-54c2580f3b18","path":"sprites/spr_truck/spr_truck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"003e4ee6-1157-4d2a-902d-54c2580f3b18","path":"sprites/spr_truck/spr_truck.yy",},"LayerId":{"name":"894ad354-51c3-45ac-a5da-182c8d96ad99","path":"sprites/spr_truck/spr_truck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_truck","path":"sprites/spr_truck/spr_truck.yy",},"resourceVersion":"1.0","name":"003e4ee6-1157-4d2a-902d-54c2580f3b18","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"24baf449-bd42-41de-b028-c69b558c0ecc","path":"sprites/spr_truck/spr_truck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"24baf449-bd42-41de-b028-c69b558c0ecc","path":"sprites/spr_truck/spr_truck.yy",},"LayerId":{"name":"9ffea531-1baf-4945-b2d4-2bcb1970b498","path":"sprites/spr_truck/spr_truck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_truck","path":"sprites/spr_truck/spr_truck.yy",},"resourceVersion":"1.0","name":"24baf449-bd42-41de-b028-c69b558c0ecc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_truck","path":"sprites/spr_truck/spr_truck.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e7d7be08-74e3-4288-a0a4-1237352fb32c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"003e4ee6-1157-4d2a-902d-54c2580f3b18","path":"sprites/spr_truck/spr_truck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc8b42cb-cd51-4ea4-b499-edc18de97182","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24baf449-bd42-41de-b028-c69b558c0ecc","path":"sprites/spr_truck/spr_truck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"894ad354-51c3-45ac-a5da-182c8d96ad99","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9ffea531-1baf-4945-b2d4-2bcb1970b498","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

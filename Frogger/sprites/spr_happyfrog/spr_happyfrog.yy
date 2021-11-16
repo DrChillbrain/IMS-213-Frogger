@@ -8,9 +8,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 29,
-  "bbox_top": 6,
-  "bbox_bottom": 27,
+  "bbox_right": 31,
+  "bbox_top": 0,
+  "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"125eebf4-3b12-4205-8927-6d31b2e30e58","path":"sprites/spr_lilypad/spr_lilypad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"125eebf4-3b12-4205-8927-6d31b2e30e58","path":"sprites/spr_lilypad/spr_lilypad.yy",},"LayerId":{"name":"26ce5763-75d4-42d8-9690-84fb53dd6e42","path":"sprites/spr_lilypad/spr_lilypad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_lilypad","path":"sprites/spr_lilypad/spr_lilypad.yy",},"resourceVersion":"1.0","name":"125eebf4-3b12-4205-8927-6d31b2e30e58","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ad783b8c-326a-4f5f-b384-ef0592db4ba3","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ad783b8c-326a-4f5f-b384-ef0592db4ba3","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},"LayerId":{"name":"081d8183-68e0-44b9-af26-08f2e21dc750","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_happyfrog","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},"resourceVersion":"1.0","name":"ad783b8c-326a-4f5f-b384-ef0592db4ba3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_lilypad","path":"sprites/spr_lilypad/spr_lilypad.yy",},
+    "spriteId": {"name":"spr_happyfrog","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b2b93c46-ab90-4bb8-b613-0ca9f4f501a1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"125eebf4-3b12-4205-8927-6d31b2e30e58","path":"sprites/spr_lilypad/spr_lilypad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3cea0d1d-2988-4bf1-a2b9-bc6f1552ae26","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad783b8c-326a-4f5f-b384-ef0592db4ba3","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_lilypad","path":"sprites/spr_lilypad/spr_lilypad.yy",},
+    "parent": {"name":"spr_happyfrog","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_lilypad",
+    "name": "spr_happyfrog",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"26ce5763-75d4-42d8-9690-84fb53dd6e42","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"081d8183-68e0-44b9-af26-08f2e21dc750","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_lilypad",
+  "name": "spr_happyfrog",
   "tags": [],
   "resourceType": "GMSprite",
 }

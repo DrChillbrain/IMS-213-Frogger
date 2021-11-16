@@ -4,6 +4,7 @@
     {"id":{"name":"spr_truck","path":"sprites/spr_truck/spr_truck.yy",},"order":5,},
     {"id":{"name":"obj_landing","path":"objects/obj_landing/obj_landing.yy",},"order":8,},
     {"id":{"name":"GameOver","path":"scripts/GameOver/GameOver.yy",},"order":2,},
+    {"id":{"name":"spr_gameovertext","path":"sprites/spr_gameovertext/spr_gameovertext.yy",},"order":9,},
     {"id":{"name":"spr_lilypad","path":"sprites/spr_lilypad/spr_lilypad.yy",},"order":1,},
     {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},"order":5,},
     {"id":{"name":"obj_lilypadSpawner","path":"objects/obj_lilypadSpawner/obj_lilypadSpawner.yy",},"order":0,},
@@ -15,6 +16,7 @@
     {"id":{"name":"obj_lilypad","path":"objects/obj_lilypad/obj_lilypad.yy",},"order":3,},
     {"id":{"name":"spr_frog","path":"sprites/spr_frog/spr_frog.yy",},"order":0,},
     {"id":{"name":"Reach","path":"scripts/Reach/Reach.yy",},"order":1,},
+    {"id":{"name":"spr_happyfrog","path":"sprites/spr_happyfrog/spr_happyfrog.yy",},"order":10,},
     {"id":{"name":"spr_thorns","path":"sprites/spr_thorns/spr_thorns.yy",},"order":8,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":5,},
     {"id":{"name":"obj_logSpawner","path":"objects/obj_logSpawner/obj_logSpawner.yy",},"order":2,},
@@ -27,6 +29,7 @@
     {"id":{"name":"spr_log","path":"sprites/spr_log/spr_log.yy",},"order":7,},
     {"id":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},"order":4,},
     {"id":{"name":"obj_log","path":"objects/obj_log/obj_log.yy",},"order":6,},
+    {"id":{"name":"obj_gameovertext","path":"objects/obj_gameovertext/obj_gameovertext.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -62,6 +65,7 @@
     {"folderPath":"folders/Objects/GameObjects.yy","order":2,"resourceVersion":"1.0","name":"GameObjects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/ObjectSpawners.yy","order":3,"resourceVersion":"1.0","name":"ObjectSpawners","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/LevelCreators.yy","order":1,"resourceVersion":"1.0","name":"LevelCreators","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Hud Elements.yy","order":6,"resourceVersion":"1.0","name":"Hud Elements","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -71,7 +75,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.6.595",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "Frogger",
