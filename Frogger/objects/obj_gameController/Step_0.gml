@@ -6,6 +6,19 @@ if (inGame)
 	{
 		GameOver();
 	}
+	
+	landingCounter = 0;
 
-	//with (obj_
+	with(obj_landing)
+	{
+		if (reached)
+		{
+			obj_gameController.landingCounter += 1;
+		}
+	}
+	
+	if (landingCounter == 6)
+	{
+		LevelWin();
+	}
 }

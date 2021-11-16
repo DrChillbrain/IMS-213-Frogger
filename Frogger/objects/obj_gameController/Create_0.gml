@@ -6,6 +6,7 @@ function MenuSetup()
 	inGame = false;
 	instance_create_layer(x, y, "hud_elements", obj_menuController);
 	menuObjects = MenuCreator();
+	landingCounter = 0;
 }
 
 MenuSetup();
@@ -29,6 +30,12 @@ function StartGame()
 	drawScore = 0;
 
 	instance_create_layer(x, y, "player", obj_player);
+}
+
+function LevelWin()
+{
+	realScore += 400;
+	obj_landing.reached = false;
 }
 
 function ClearField()

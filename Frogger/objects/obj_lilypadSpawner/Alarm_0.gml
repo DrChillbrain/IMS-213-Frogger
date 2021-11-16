@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!firstCall)
+{
+	FillScreen();
+}
+
 var lily = instance_create_layer(startPos, y, "objects", obj_lilypad)
 lily.lilySpeed = lilySpeed;
 
