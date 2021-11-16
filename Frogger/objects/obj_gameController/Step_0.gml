@@ -1,7 +1,11 @@
-/// @description Insert description here
+/// @description Checking for game over
 // You can write your code in this editor
-
-if (frogLives == -1)
+if (inGame)
 {
-	GameOver();
+	if (frogLives == -1)
+	{
+		GameOver();
+	}
+
+	//with (obj_
 }

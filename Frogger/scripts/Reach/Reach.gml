@@ -5,5 +5,5 @@ function Reach()
 	obj_player.x = 304;
 	obj_player.y = 560;
 	
-	//Add Score?
+	obj_gameController.realScore += 100;
 }
