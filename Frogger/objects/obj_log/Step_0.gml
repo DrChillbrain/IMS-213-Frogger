@@ -7,3 +7,8 @@ if (x > 1000 || x < -500)
 {
 	instance_destroy();
 }
+
+if (!obj_gameController.inGame)
+{
+	instance_destroy();
+}

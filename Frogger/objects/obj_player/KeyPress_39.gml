@@ -18,6 +18,6 @@ if (moving == false)
 		xmoveSpeed = 4;
 	}
 	
-	image_angle = 0;
+	image_angle = 360;
 	moving = true;
 }

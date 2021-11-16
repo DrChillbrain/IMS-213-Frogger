@@ -1,68 +1,64 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function level1Creator()
+function Level1Creator()
 {
 	//TAKE TWO WOOOOOOOOOOOOOOOOOOOOOOOOOOO
 	grasspatch1 = [];
+	var grasspatch1Counter = 0;
 	road = [];
+	var roadCounter = 0;
 	grasspatch2 = [];
+	var grasspatch2Counter = 0;
 	water = [];
+	var waterCounter = 0;
 	landing = [];
+	var landingCounter = 0;
 	carSpawners = [];
 	waterSpawners = [];
-	counter = 0;
 	landCounter = 1;
 	
 	for (var i = 0; i < 18; i++)
 	{
 		for (var j = 1; j < 3; j++) //Making the starting grasspatch
 		{
-			grasspatch1[counter] = instance_create_layer((i * 32) + 16, (576 - (32 * j)) + 16, "floor", obj_grass);
-			counter += 1;
+			grasspatch1[grasspatch1Counter] = instance_create_layer((i * 32) + 16, (576 - (32 * j)) + 16, "floor", obj_grass);
+			grasspatch1Counter += 1;
 		}
-		
-		counter = 0;
 		
 		for (var j = 1; j < 7; j++) //Making the road
 		{
-			road[counter] = instance_create_layer((i * 32) + 16, (512 - (32 * j)) + 16, "floor", obj_road);
-			counter += 1;
+			road[roadCounter] = instance_create_layer((i * 32) + 16, (512 - (32 * j)) + 16, "floor", obj_road);
+			roadCounter += 1;
 		}
-		
-		counter = 0;
 		
 		for (var j = 1; j < 2; j++) //Making the break area
 		{
-			grasspatch2[counter] = instance_create_layer((i * 32) + 16, (320 - (32 * j)) + 16, "floor", obj_grass);
-			counter += 1;
+			grasspatch2[grasspatch2Counter] = instance_create_layer((i * 32) + 16, (320 - (32 * j)) + 16, "floor", obj_grass);
+			grasspatch2Counter += 1;
 		}
-		
-		counter = 0;
 		
 		for (var j = 1; j < 7; j++) //Making the water
 		{
-			water[counter] = instance_create_layer((i * 32) + 16, (288 - (32 * j)) + 16, "floor", obj_water);
-			counter += 1;
+			water[waterCounter] = instance_create_layer((i * 32) + 16, (288 - (32 * j)) + 16, "floor", obj_water);
+			waterCounter += 1;
 		}
-		
-		counter = 0;
 		
 		for (var j = 1; j < 2; j++)
 		{
 			if (landCounter == 2)
 			{
 				landCounter = 0;
-				landing[counter] = instance_create_layer((i * 32) + 16, (96 - (32 * j)) + 16, "floor", obj_landing);
-				landing[counter].landingID = i;
+				landing[landingCounter] = instance_create_layer((i * 32) + 16, (96 - (32 * j)) + 16, "floor", obj_landing);
+				landing[landingCounter].landingID = i;
 			}
 			
 			else
 			{
 				landCounter += 1;
-				landing[counter] = instance_create_layer((i * 32) + 16, (96 - (32 * j)) + 16, "floor", obj_thorns);
+				landing[landingCounter] = instance_create_layer((i * 32) + 16, (96 - (32 * j)) + 16, "floor", obj_thorns);
 			}
 			
-			counter += 1;
+			landingCounter += 1;
 		}
 		
 		

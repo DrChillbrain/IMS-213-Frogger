@@ -6,7 +6,7 @@
     "path": "folders/Scripts/LevelCreators.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Level1Creator",
+  "name": "MenuCreator",
   "tags": [],
   "resourceType": "GMScript",
 }

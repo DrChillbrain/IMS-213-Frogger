@@ -1,4 +1,8 @@
 /// @description Insert description here
-image_alpha = 1;
+
+counter = 0;
+
+alpha = 0;
+
 x = 96;
-y = 193;
+y = 192;
