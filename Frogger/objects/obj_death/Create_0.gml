@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-lilySpeed = 0;
-
-image_index = 0;
 image_speed = 0;
+alarm_set(0, 80);
+step = 0;

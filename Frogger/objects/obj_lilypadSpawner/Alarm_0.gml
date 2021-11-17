@@ -12,7 +12,7 @@ lily.lilySpeed = lilySpeed;
 groupCount += 1;
 
 if (groupCount == groupSize)
-{
+{	
 	groupCount = 0;
 	alarm_set(0, groupDistance);
 }

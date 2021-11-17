@@ -15,3 +15,4 @@ if (!obj_gameController.inGame)
 {
 	instance_destroy();
 }
+

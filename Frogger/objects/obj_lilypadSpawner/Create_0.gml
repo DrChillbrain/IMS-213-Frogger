@@ -9,20 +9,20 @@ groupDistance = 0;
 groupSpacing = 0;
 firstCall = false;
 
-//Repeat 3
+//Fill screen immediately so you don't have to wait
 function FillScreen()
 {
 	firstCall = true;
 	
-	if (lilySpeed > 0)
+	for (var i = 0; i < groupSize; i++)
 	{
-		var lilyDirection = 1;
-	}
-	
-	else if (lilySpeed < 0)
-	{
-		var lilyDirection = -1;
+		for (var j = 0; j < 3; j ++)
+		{
+			var lily = instance_create_layer((startPos) + (((groupDistance + (j * ((groupDistance) + (groupSpacing * (groupSize - 1))))) + (groupSpacing * i)) / (1 / lilySpeed)), y, "objects", obj_lilypad)
+			lily.lilySpeed = lilySpeed;
+		}
 	}
 }
 
 alarm_set(0, 1);
+alarm_set(1, 5);

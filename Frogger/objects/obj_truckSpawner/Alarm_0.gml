@@ -1,6 +1,11 @@
 /// @description Spawning vehicles
 // You can write your code in this editor
 
+if (!firstCall)
+{
+	FillScreen();
+}
+
 if (carType == 1) //Truck Object
 {
 	var truck = instance_create_layer(startPos, y, "cars", obj_truck)

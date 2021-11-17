@@ -12,4 +12,5 @@ function GameOver()
 
 	obj_gameController.MenuSetup();
 	obj_gameController.ClearField();
+	instance_destroy(obj_death);
 }

@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-lilySpeed = 0;
-
-image_index = 0;
-image_speed = 0;
+instance_destroy();
+instance_create_layer(304, 560, "player", obj_player);
