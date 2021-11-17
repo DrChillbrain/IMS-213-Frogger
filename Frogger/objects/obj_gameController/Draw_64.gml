@@ -40,3 +40,11 @@ if (!inGame)
 	draw_text_ext_transformed_color(180, 400, "Level Select", 10, 300, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
 	draw_text_ext_transformed_color(180, 480, "Quit", 10, 300, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
 }
+
+if (mapping)
+{
+	draw_sprite_ext(spr_mapBG, 0, 288, 258, 7, 5, 0, c_white, 0.9);
+	
+	draw_sprite_ext(spr_dpad, dpadIndex, 192, 288, 0.2, 0.2, 0, c_white, 1);
+	draw_sprite_ext(spr_button, buttonIndex, 420, 288, 0.2, 0.2, 0, c_white, 1);
+}

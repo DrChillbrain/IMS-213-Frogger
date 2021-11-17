@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Game Objects",
+    "path": "folders/Sprites/Game Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_car",
