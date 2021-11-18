@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Level1Creator()
 {
-	//TAKE TWO WOOOOOOOOOOOOOOOOOOOOOOOOOOO
+	//Level 1, 1 road, 1 water
 	grasspatch1 = [];
 	var grasspatch1Counter = 0;
 	road = [];
