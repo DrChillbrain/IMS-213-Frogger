@@ -46,23 +46,23 @@ if (!inGame)
 	if (levelSelect == true && mainMenu == false)
 	{
 		//Title text
-		
+		draw_text_ext_transformed_color(100, 50, "Back to Main Menu", 10, 10000, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
 		
 		var counter = 0;
 		//Levels to select
 		for (var i = 0; i < 5; i++)
 		{
-			for (var j = 1; j < 3; j++)
+			for (var j = 0; j < 2; j++)
 			{
 				counter += 1;
 				if (counter > maxLevel)
 				{
-					draw_text_ext_transformed_color((180 * i), (160 + (i * 80)), ("Level" + string(counter)), 10, 300, 1, 1, 0, c_white, c_white, c_white, c_white, 0.5);
+					draw_text_ext_transformed_color((100 + (250 * j)), (160 + (i * 80)), ("Level " + string(counter)), 10, 300, 1, 1, 0, c_white, c_white, c_white, c_white, 0.5);
 				}
 				
 				else
 				{
-					draw_text_ext_transformed_color((180 * i), (160 + (i * 80)), ("Level" + string(counter)), 10, 300, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
+					draw_text_ext_transformed_color((100 + (250 * j)), (160 + (i * 80)), ("Level " + string(counter)), 10, 300, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
 				}
 			}
 		}

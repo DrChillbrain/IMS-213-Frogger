@@ -8,7 +8,7 @@ image_yscale = 2;
 axisActive = false;
 axisToCheck = 0;
 
-x = 140;
+x = 140; //180 - 40
 y = 355; //300 + 55
 
 function Enter()
@@ -41,33 +41,83 @@ function Enter()
 		switch (levelOption)
 		{
 			case 10: //Level 10
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 			
 			case 9: //Level 9
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 			
 			case 8: //Level 8
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break; 
 			
 			case 7: //Level 7
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break; 
 			
 			case 6: //Level 6
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 			
 			case 5: //Level 5
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 			
 			case 4: //Level 4
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 		
 			case 3: //Level 3
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 			
 			case 2: //Level 2
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 		
 			case 1: //Level 1
+				if (obj_gameController.maxLevel >= levelOption)
+				{
+					obj_gameController.levelCount = levelOption;
+					obj_gameController.StartGame();
+				}
 				break;
 			
 			case 0: //Back to main menu
@@ -89,23 +139,50 @@ function Up()
 {
 	AxisCheck(obj_gameController.pad_up);
 	
-	menuOption -= 1;
-
-	if (menuOption < 0)
+	if (obj_gameController.mainMenu == true && obj_gameController.levelSelect == false)
 	{
-		menuOption = 2;
+		menuOption -= 1;
+
+		if (menuOption < 0)
+		{
+			menuOption = 2;
+		}
 	}
+	
+	else if (obj_gameController.mainMenu == false && obj_gameController.levelSelect == true)
+	{
+		levelOption -= 1;
+		
+		if (levelOption < 0)
+		{
+			levelOption = 10;
+		}
+	}
+	
 }
 
 function Down()
 {
 	AxisCheck(obj_gameController.pad_down);
 	
-	menuOption += 1;
-
-	if (menuOption > 2)
+	if (obj_gameController.mainMenu == true && obj_gameController.levelSelect == false)
 	{
-		menuOption = 0;
+		menuOption += 1;
+
+		if (menuOption > 2)
+		{
+			menuOption = 0;
+		}
+	}
+	
+	else if (obj_gameController.mainMenu == false && obj_gameController.levelSelect == true)
+	{
+		levelOption += 1;
+		
+		if (levelOption > 10)
+		{
+			levelOption = 0;
+		}
 	}
 }
 

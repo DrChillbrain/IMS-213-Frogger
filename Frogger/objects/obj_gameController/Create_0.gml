@@ -20,7 +20,7 @@ drawScore = 0;
 
 mainMenu = true;
 levelSelect = false;
-maxLevel = 0;
+maxLevel = 1;
 
 function MenuSetup()
 {
@@ -45,7 +45,13 @@ function StartGame()
 	
 	//Making in game items
 	levelObjects = asset_get_index("Level" + string(levelCount) + "Creator")();
+	if (maxLevel < levelCount)
+	{
+		maxLevel = levelCount;
+	}
 	frogLives = 3;
+	mainMenu = true;
+	levelSelect = false;
 
 	instance_create_layer(x, y, "player", obj_player);
 }
