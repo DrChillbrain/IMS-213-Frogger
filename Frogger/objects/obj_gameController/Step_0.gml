@@ -9,17 +9,25 @@ if (inGame)
 	
 	landingCounter = 0;
 
-	with(obj_landing)
+	if (instance_exists(obj_landing))
 	{
-		if (reached)
+		with(obj_landing)
 		{
-			obj_gameController.landingCounter += 1;
+			if (reached)
+			{
+				obj_gameController.landingCounter += 1;
+			}
 		}
-	}
 	
-	if (landingCounter == 6)
-	{
-		LevelWin();
+		if (landingCounter == 6)
+		{
+			ClearField();
+			instance_destroy(obj_truck);
+			instance_destroy(obj_car);
+			instance_destroy(obj_lilypad);
+			instance_destroy(obj_log);
+			LevelWin();
+		}
 	}
 }
 
@@ -41,7 +49,7 @@ if (controllerConnected)
 
 if (mapping)
 {	
-	for (var i = gp_face1; i < gp_axisrv; i++)
+	for (var i = 0; i < gamepad_button_count(pad_num); i++)
 	{	
 		if (gamepad_button_check_pressed(pad_num, i))
 		{

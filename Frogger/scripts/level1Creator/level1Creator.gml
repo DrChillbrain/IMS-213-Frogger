@@ -70,7 +70,7 @@ function Level1Creator()
 	carSpawners[0].truckSpeed = 2;
 	carSpawners[0].groupSize = 3;
 	carSpawners[0].groupDistance = 100;
-	carSpawners[0].groupSpacing = 17;
+	carSpawners[0].groupSpacing = 18;
 	carSpawners[0].carType = 2;
 	
 	//Road Row 2 (Medium Car Right)
@@ -97,7 +97,7 @@ function Level1Creator()
 	carSpawners[3].truckSpeed = -2;
 	carSpawners[3].groupSize = 3;
 	carSpawners[3].groupDistance = 100;
-	carSpawners[3].groupSpacing = 17;
+	carSpawners[3].groupSpacing = 18;
 	carSpawners[3].carType = 2;
 	
 	//Road Row 5 (Fast Car Left)

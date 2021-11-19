@@ -12,7 +12,15 @@ pad_up = 0;
 pad_right = 0;
 pad_down = 0;
 pad_button = 0;
+
 pad_toCheck = 0;
+levelCount = 1;
+realScore = 0;
+drawScore = 0;
+
+mainMenu = true;
+levelSelect = false;
+maxLevel = 0;
 
 function MenuSetup()
 {
@@ -36,11 +44,8 @@ function StartGame()
 	inGame = true;
 	
 	//Making in game items
-	levelObjects = Level1Creator();
+	levelObjects = asset_get_index("Level" + string(levelCount) + "Creator")();
 	frogLives = 3;
-
-	realScore = 0;
-	drawScore = 0;
 
 	instance_create_layer(x, y, "player", obj_player);
 }
@@ -48,7 +53,13 @@ function StartGame()
 function LevelWin()
 {
 	realScore += 400;
-	obj_landing.reached = false;
+	//obj_landing.reached = false;
+	
+	levelCount += 1;
+	var setLives = frogLives;
+	
+	StartGame();
+	frogLives = setLives;
 }
 
 function ClearField()

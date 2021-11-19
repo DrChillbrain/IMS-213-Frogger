@@ -12,5 +12,8 @@ function GameOver()
 
 	obj_gameController.MenuSetup();
 	obj_gameController.ClearField();
+	obj_gameController.levelCount = 1;
+	obj_gameController.realScore = 0;
+	obj_gameController.drawScore = 0;
 	instance_destroy(obj_death);
 }

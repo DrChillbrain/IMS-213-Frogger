@@ -17,7 +17,7 @@ if (!obj_gameController.mapping)
 		}
 	}
 
-	if (keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(obj_gameController.pad_num, obj_gameController.pad_up) || gamepad_axis_value(obj_gameController.pad_num, obj_gameController.pad_up) > 0.5)
+	if (keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(obj_gameController.pad_num, obj_gameController.pad_up) || gamepad_axis_value(obj_gameController.pad_num, obj_gameController.pad_up) < -0.5)
 	{
 		if (!axisActive)
 		{
@@ -33,7 +33,7 @@ if (!obj_gameController.mapping)
 		}
 	}
 
-	if (keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(obj_gameController.pad_num, obj_gameController.pad_down) || gamepad_axis_value(obj_gameController.pad_num, obj_gameController.pad_down) < -0.5)
+	if (keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(obj_gameController.pad_num, obj_gameController.pad_down) || gamepad_axis_value(obj_gameController.pad_num, obj_gameController.pad_down) > 0.5)
 	{
 		if (!axisActive)
 		{
