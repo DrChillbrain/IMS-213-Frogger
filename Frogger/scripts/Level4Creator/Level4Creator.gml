@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Level2Creator()
+function Level4Creator()
 {
 	//Level 1, 1 road, 1 water
 	grasspatch1 = [];
@@ -136,6 +136,23 @@ function Level2Creator()
 	carSpawners[7].groupSpacing = (60 / 4);
 	carSpawners[7].carType = 1;
 	
+	
+	/*
+	//Water Row 1 (Slow Lilypad Right)
+	waterSpawners[0] = instance_create_layer(0, 256 + 16, "objects", obj_lilypadSpawner);
+	waterSpawners[0].startPos = -50;
+	waterSpawners[0].lilySpeed = 1;
+	waterSpawners[0].groupSize = 3;
+	waterSpawners[0].groupDistance = 120;
+	waterSpawners[0].groupSpacing = 35;
+	
+	waterSpawners[2] = instance_create_layer(0, 192 + 16, "objects", obj_logSpawner);
+	waterSpawners[2].startPos = 626;
+	waterSpawners[2].logSpeed = -1;
+	waterSpawners[2].log1Size = 4;
+	waterSpawners[2].log2Size = 3;
+	waterSpawners[2].log3Size = 4;
+	*/
 	
 	//Water Row 1 (Medium Lily Left)
 	waterSpawners[0] = instance_create_layer(0, 192 + 16, "objects", obj_lilypadSpawner);

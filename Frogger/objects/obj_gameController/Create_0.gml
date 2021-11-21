@@ -20,7 +20,7 @@ drawScore = 0;
 
 mainMenu = true;
 levelSelect = false;
-maxLevel = 1;
+maxLevel = 10;
 
 function MenuSetup()
 {
@@ -45,6 +45,7 @@ function StartGame()
 	
 	//Making in game items
 	levelObjects = asset_get_index("Level" + string(levelCount) + "Creator")();
+	
 	if (maxLevel < levelCount)
 	{
 		maxLevel = levelCount;

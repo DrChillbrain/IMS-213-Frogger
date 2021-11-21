@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ObjectSpawners",
-    "path": "folders/Objects/ObjectSpawners.yy",
+    "name": "Gamepad Mapping",
+    "path": "folders/Scripts/Gamepad Mapping.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_lilypadSpawner",
