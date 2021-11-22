@@ -27,7 +27,8 @@ if (inGame)
 		drawScore -= 10;
 	}
 
-	draw_text_ext_transformed_color(180, 4, "Score: " + string(drawScore), 10, 500, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
+	draw_text_ext_transformed_color(230, 4, "Score: " + string(drawScore), 10, 500, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
+	draw_text_ext_transformed_color(480, 4, "Level: " + string(levelCount), 10, 500, 1, 1, 0, c_white, c_white, c_white, c_white, 1);
 }
 
 if (!inGame)
