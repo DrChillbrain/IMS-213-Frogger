@@ -60,8 +60,6 @@ function Level2Creator()
 			
 			landingCounter += 1;
 		}
-		
-		
 	}
 	
 	//Road Row 1 (Medium Truck Right)

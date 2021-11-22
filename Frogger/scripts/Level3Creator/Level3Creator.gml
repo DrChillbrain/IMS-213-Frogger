@@ -76,8 +76,6 @@ function Level3Creator()
 			
 			landingCounter += 1;
 		}
-		
-		
 	}
 	
 	//Water1 Row 1 (Fast Lily Left)

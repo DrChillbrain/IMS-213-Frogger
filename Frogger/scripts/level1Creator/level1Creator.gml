@@ -60,8 +60,6 @@ function Level1Creator()
 			
 			landingCounter += 1;
 		}
-		
-		
 	}
 	
 	//Road Row 1 (Slow Car Left)

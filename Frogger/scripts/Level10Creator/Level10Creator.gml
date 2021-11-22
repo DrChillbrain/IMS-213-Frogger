@@ -77,8 +77,6 @@ function Level10Creator()
 			
 			landingCounter += 1;
 		}
-		
-		
 	}
 	
 	//Water Part 1 Row 1 (Medium Log Right)
