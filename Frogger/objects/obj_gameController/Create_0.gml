@@ -22,6 +22,11 @@ mainMenu = true;
 levelSelect = false;
 maxLevel = 1;
 
+musicCounter = 12;
+musicToPlay = mus_menu1;
+backToMenu = false;
+audio_play_sound(mus_menu1, 1, false);
+
 function MenuSetup()
 {
 	inGame = false;
@@ -75,6 +80,16 @@ function LevelWin()
 	audio_stop_sound(sn_reach);
 	audio_play_sound(sn_levelWin, 1, false);
 	frogLives = setLives;
+	
+	if (musicToPlay == mus_level1)
+	{
+		musicToPlay = mus_level2;
+	}
+	
+	if (musicToPlay == mus_level3)
+	{
+		musicToPlay = mus_level4;
+	}
 }
 
 function ClearField()

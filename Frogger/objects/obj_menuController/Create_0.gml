@@ -29,6 +29,7 @@ function Enter()
 	
 			case 0: //Start
 				obj_gameController.StartGame();
+				obj_gameController.musicToPlay = mus_menu2;
 				break;
 			
 			default:
@@ -46,6 +47,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 			
@@ -54,6 +56,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 			
@@ -62,6 +65,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break; 
 			
@@ -70,6 +74,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break; 
 			
@@ -78,6 +83,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 			
@@ -86,6 +92,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 			
@@ -94,6 +101,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 		
@@ -102,6 +110,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 			
@@ -110,6 +119,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 		
@@ -118,6 +128,7 @@ function Enter()
 				{
 					obj_gameController.levelCount = levelOption;
 					obj_gameController.StartGame();
+					obj_gameController.musicToPlay = mus_menu2;
 				}
 				break;
 			

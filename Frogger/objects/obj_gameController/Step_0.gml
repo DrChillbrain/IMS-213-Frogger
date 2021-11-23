@@ -7,6 +7,17 @@ if (inGame)
 		audio_stop_sound(sn_carDie);
 		audio_stop_sound(sn_waterDie);
 		audio_play_sound(sn_gameOver, 1, false);
+		
+		backToMenu = true;
+		if (musicToPlay == mus_level1)
+		{
+			musicToPlay = mus_level5;
+		}
+	
+		if (musicToPlay == mus_level3)
+		{
+			musicToPlay = mus_level4;
+		}
 		GameOver();
 	}
 	
@@ -70,6 +81,42 @@ if (mapping)
 			pad_toCheck = i;
 			axisActive = true;
 			NextStep();
+		}
+	}
+}
+
+musicCounter += 1;
+if (musicCounter == 576)
+{
+	musicCounter = 0;
+	audio_play_sound(musicToPlay, 1, false);
+	
+	if (musicToPlay == mus_menu2)
+	{
+		musicToPlay = mus_level1;
+	}
+	
+	if (musicToPlay == mus_level2)
+	{
+		musicToPlay = mus_level3;
+	}
+	
+	if (musicToPlay == mus_level5)
+	{
+		musicToPlay = mus_menu1;
+	}
+	
+	if (musicToPlay == mus_level4)
+	{
+		if (backToMenu == true)
+		{
+			backToMenu = false;
+			musicToPlay = mus_menu1;
+		}
+		
+		else if (backToMenu == false)
+		{
+			musicToPlay = mus_level1;
 		}
 	}
 }
