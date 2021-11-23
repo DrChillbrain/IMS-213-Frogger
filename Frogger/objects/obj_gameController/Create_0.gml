@@ -72,6 +72,8 @@ function LevelWin()
 	var setLives = frogLives;
 	
 	StartGame();
+	audio_stop_sound(sn_reach);
+	audio_play_sound(sn_levelWin, 1, false);
 	frogLives = setLives;
 }
 

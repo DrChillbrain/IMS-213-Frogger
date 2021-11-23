@@ -4,6 +4,9 @@ if (inGame)
 {
 	if (frogLives == -1)
 	{
+		audio_stop_sound(sn_carDie);
+		audio_stop_sound(sn_waterDie);
+		audio_play_sound(sn_gameOver, 1, false);
 		GameOver();
 	}
 	

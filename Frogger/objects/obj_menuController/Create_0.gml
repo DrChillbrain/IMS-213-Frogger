@@ -13,6 +13,7 @@ y = 355; //300 + 55
 
 function Enter()
 {	
+	audio_play_sound(sn_hop, 1, false);
 	if (obj_gameController.mainMenu == true && obj_gameController.levelSelect == false)
 	{
 		switch (menuOption)
@@ -138,6 +139,7 @@ function Enter()
 function Up()
 {
 	AxisCheck(obj_gameController.pad_up);
+	audio_play_sound(sn_hop, 1, false);
 	
 	if (obj_gameController.mainMenu == true && obj_gameController.levelSelect == false)
 	{
@@ -164,6 +166,7 @@ function Up()
 function Down()
 {
 	AxisCheck(obj_gameController.pad_down);
+	audio_play_sound(sn_hop, 1, false);
 	
 	if (obj_gameController.mainMenu == true && obj_gameController.levelSelect == false)
 	{

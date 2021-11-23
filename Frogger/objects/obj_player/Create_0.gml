@@ -37,6 +37,7 @@ function Left()
 	
 		image_angle = 180;
 		moving = true;
+		audio_play_sound(sn_hop, 1, false);
 	}
 }
 
@@ -49,6 +50,7 @@ function Up()
 		image_angle = 90;
 		moving = true;
 		ymoveSpeed = -4;
+		audio_play_sound(sn_hop, 1, false);
 	}
 }
 
@@ -77,6 +79,7 @@ function Right()
 	
 		image_angle = 360;
 		moving = true;
+		audio_play_sound(sn_hop, 1, false);
 	}
 }
 
@@ -89,6 +92,7 @@ function Down()
 		image_angle = 270;
 		moving = true;
 		ymoveSpeed = 4;
+		audio_play_sound(sn_hop, 1, false);
 	}
 }
 

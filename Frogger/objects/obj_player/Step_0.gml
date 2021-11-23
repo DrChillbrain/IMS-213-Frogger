@@ -75,6 +75,7 @@ if (place_meeting(x, y, obj_lilypad) && moving == false)
 	
 	else
 	{
+		audio_play_sound(sn_waterDie, 1, false);
 		Lose();
 	}
 }
@@ -89,6 +90,7 @@ if (place_meeting(x, y, obj_log) && moving == false)
 	
 	else
 	{
+		audio_play_sound(sn_waterDie, 1, false);
 		Lose();
 	}
 	
@@ -99,6 +101,7 @@ if (place_meeting(x, y, obj_thorns) && moving == false)
 	var thornSpot = instance_nearest(x, y, obj_thorns);
 	if (abs(x - thornSpot.x) < 17)
 	{
+		audio_play_sound(sn_carDie, 1, false);
 		Lose();
 	}
 }
@@ -109,12 +112,15 @@ if (place_meeting(x, y, obj_landing) && moving == false)
 	if (abs(x - landingSpot.x) < 17)
 	{
 		landingSpot.reached = true;
+		audio_play_sound(sn_reach, 1, false);
+		
 		Reach();
 	}
 }
 
 if (!place_meeting(x, y, obj_lilypad) && !place_meeting(x, y, obj_log) && place_meeting(x, y, obj_water) && moving = false)
 {
+	audio_play_sound(sn_waterDie, 1, false);
 	Lose();
 }
 
@@ -123,6 +129,7 @@ if (place_meeting(x, y, obj_truck))
 	var truckSpot = instance_nearest(x, y, obj_truck);
 	if (abs(x - truckSpot.x) < 28 && abs(y - truckSpot.y) < 20)
 	{
+		audio_play_sound(sn_carDie, 1, false);
 		Lose();
 	}
 }
@@ -132,6 +139,7 @@ if (place_meeting(x, y, obj_car))
 	var carSpot = instance_nearest(x, y, obj_car);
 	if (abs(x - carSpot.x) < 20 && abs(y - carSpot.y) < 20)
 	{
+		audio_play_sound(sn_carDie, 1, false);
 		Lose();
 	}
 }
